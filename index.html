@@ -3,30 +3,55 @@
         <title>
             HTML use cases
         </title>
+        <!-- External style sheet reference-->
+        <link rel="stylesheet" href="index.css"> 
+        <!-- Internal styling-->
+        <style>
+          marquee
+          {
+            background-color: rosybrown;
+          }
+        </style>
     </head>
     <body>
-        <marquee direction="left" height="4%" loop="10" hspace="30" bgcolor="skyblue" behavior="alternate">
-            <b>Hello everyone!!!</b>
+        <marquee direction="left" height="4%" loop="2" hspace="30" behavior="alternate">
+            <b>This is an example of internal styling</b>
         </marquee>
+        <p style="color:deeppink;text-align:center;">This is an example of inline styling</p>
         <!--Use case 1: Changing the default bulletin style in unorderded list-->
         <h3>USE CASE 1</h3>
-        <h5><b><u>Change in Bulletin style of unordered list</b></u></h5>
+        <h5 class="classSelector">Change in Bulletin style of unordered list</h5>
+        <div>
         <ul type="square">
             <li>HTML</li>
             <li>CSS</li>
             <li>React</li>
             <li>Redux</li>
         </ul>
+      </div>
         <!--Changing the default numeric values to aplhabets in ordered list-->
-        <h5><b><u>Change in Numeric style of ordered list</u></b></h5>
+        <h5 id="idSelector">Change in Numeric style of ordered list</h5>
         <ol type="A">
             <li>HTML</li>
             <li>CSS</li>
-            <li>React</li>
+           <li>React</li>
             <li>Redux</li>
         </ol>
         <hr/>
-        <h3>USE CASE 2</h3>
+        <div>
+          <p>child selector one</p>
+          <p>child selector two</p>
+          <section><p>child selector three</p></section>
+          <p>child selector four</p>
+        </div>
+        <hr/>
+       <div>
+        <p>general sibling selector one</p>
+      </div>
+        <p>general sibling selector two</p>
+        <p>general sibling selector three</p>
+     <hr/>
+             <h3>USE CASE 2</h3>
         <!--Table changes-->
         <table border="2px">
             <tr>
@@ -52,14 +77,14 @@
         <hr/>
         <h3>USE CASE 3 AND 4</h3>
         <!--simple form--> 
-        <form>
+            <form>
             <fieldset style="width:270px">
-              <legend align="center">CREATE AN ACCOUNT</legend>
+              <legend align="center" id="test">CREATE AN ACCOUNT</legend>
               <br>
               <label for="email">Email ID:</label>
-              <input type="email" id="email"><br><br>
+              <input type="email" id="email" name="e_name"><br><br>
               <label for="password">Password:</label>
-              <input type="password" id="password"><br><br>
+              <input type="password" id="password" name="e-Password"><br><br>
               <label for="birthday">Birthday:</label>&nbsp;
               <input type="date" id="birthday" name="birthday"><br><br>
               <label>Gender:</label>&nbsp;&nbsp;
@@ -87,6 +112,9 @@
 <hr/>
 <h3>USE CASE 5</h3>
         <!--Image-->
+        <h4>
+          <p>This is a baby image</p>
+        </h4>  <p>showing example of general sibling selctor</p>
         <img src="C:/Users/dhevi.s/Desktop/baby.jpg" alt="baby image" width="500" height="300" align="left"></img>
         </body>
     </body>

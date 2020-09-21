@@ -1,0 +1,52 @@
+/* Use cases in CSS (All are external style sheets)
+/* Group or element selctor */
+h3
+{
+    color: green;
+    
+}
+/* ID selctor */
+#idSelector
+{
+    font-style: italic;
+    color: red;
+}
+/* Class selctor */
+.classSelector
+{
+    font-size: 14px;
+    font-style:italic;
+    color: purple;
+}
+/* Combinator selector -- Descendant, child, adjacent sibling, general sibling */
+/* Descendant */
+div ul{
+    color: palevioletred;
+}
+/* child */
+div > p 
+{
+    font-style: italic;
+}
+/* general sibling */
+div ~ p{
+    color: blue;
+}
+/* adjacent sibling */
+h4 + p {
+    color: olivedrab;
+}
+/* Pseudo selector*/
+button:hover{
+        background-color: yellow; 
+}
+/*attribute selector*/
+[id^="test"] {
+    color: hotpink;
+  }
+[name$="name"] {
+    color:red;
+  }
+[id|="password"] {
+    color: blue;
+  }
